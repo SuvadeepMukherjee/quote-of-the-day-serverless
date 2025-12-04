@@ -1,0 +1,23 @@
+{
+  "name": "quote-of-the-day-serverless",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts" : {
+  "build":"tsc",
+  "dev":"ts-node-dev --respawn --transpile-only src/handler.ts",
+  "seed":"ts-node-dev src/scripts/seed.ts"
+},
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@aws-sdk/client-dynamodb": "^3.943.0",
+    "@aws-sdk/lib-dynamodb": "^3.943.0"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "ts-node-dev": "^2.0.0",
+    "typescript": "^5.9.3"
+  }
+}
