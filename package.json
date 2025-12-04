@@ -3,17 +3,19 @@
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
-  "scripts" : {
-  "build":"tsc",
-  "dev":"ts-node-dev --respawn --transpile-only src/handler.ts",
-  "seed":"ts-node-dev src/scripts/seed.ts"
-},
+  "scripts": {
+    "build": "tsc",
+    "dev": "ts-node-dev --respawn --transpile-only src/handler.ts",
+    "seed": "ts-node-dev src/scripts/seed.ts",
+    "create-table": "ts-node-dev src/scripts/create-table.ts"
+  },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "dependencies": {
     "@aws-sdk/client-dynamodb": "^3.943.0",
-    "@aws-sdk/lib-dynamodb": "^3.943.0"
+    "@aws-sdk/lib-dynamodb": "^3.943.0",
+    "dotenv": "^17.2.3"
   },
   "devDependencies": {
     "@types/node": "^24.10.1",
